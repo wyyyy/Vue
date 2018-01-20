@@ -12,6 +12,15 @@
             methods: {
                 add: function () {
                     console.log(this.arrs);
+                },
+                mKeydown:function(ev,index){
+                    if (index==1) {
+                    console.log("mKeydown-:keyCode"+ev.keyCode);
+                        
+                    } else {
+                    console.log("keyup-:keyCode"+ev.keyCode);
+                        
+                    }
                 }
             }
         });
