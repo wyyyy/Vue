@@ -1,45 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>ALL Vue</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <style>
-    .red {
-      color: red;
-    }
-
-    .blue {
-      background: blue;
-    }
-  </style>
-  <script src="./src/common/js/vue.js"></script>
-  <script src="./src/common/js/myjavescript.js"></script>
-
+  <meta charset="utf-8">
+  <title>myproject</title>
 </head>
 
 <body>
-  <div id="box">
-    <strong :class="[classvalue]">文字...
-      <h1>{{message}}</h1>
-    </strong>
-    <input type="text" v-model="minput">inputValue:{{minput}}
-    <ul>
-      <li v-for="(item,index) in arrs">
-        {{item}}{{index}}
-      </li>
-      <div id="example-1">
-        <button v-on:click="counter += 1">Add number</button>
-        <button v-on:click="add()">Add arrs</button>
-        <p>The button above has been clicked {{ counter }} times.</p>
-      </div>
-      <div id="example-click">
-        <input type="text" v-model="minput" @keydown="mKeydown($event,1)" @keyup="mKeydown($event,2)" >inputValue:{{minput}}
-      </div>
-    </ul>
+  <div id="app">
   </div>
 </body>
 
